@@ -1,0 +1,559 @@
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+
+
+
+
+/*finish*/
+
+
+
+
+body {
+    background: #eeee;
+}
+.back {
+    background-color:#eeee ;
+}
+header {
+    box-sizing: border-box;
+    width: 100%;
+    background: #ffd2a8;
+    height: 75px;
+    display: flex;
+}
+h1 {
+    color: #8C4502;
+    font-size: 45px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 150px;
+    font-style: italic;
+}
+.inner-nav {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    line-height: 60px;
+    list-style: none;
+    padding-right: 5px;
+    padding-top: 15px;
+}
+.menu {
+    padding: 0 20px;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.photo {
+    background: url(../img/mael-balland-Lc7qnt45-pU-unsplash.jpg);
+    background-size: cover;
+    height: 600px;
+}
+.explain {
+    padding-top: 30px;
+    color: whitesmoke;
+    font-size: 40px;
+    writing-mode: vertical-lr;
+    padding-left: 1000px;
+    
+}
+.task {
+    text-align: center;
+}
+h2 {
+    font-size: 50px;
+    padding-top: 70px;
+    font-weight: 450;
+    padding-bottom: 30px;
+    color: #ff9c40;
+}
+h3 {
+    padding-top: 20px ;
+    font-size: 40px;
+    font-weight: 100;
+}
+.task p {
+    padding:30px;
+    font-weight: 100;
+}
+.cost {
+    text-align: center;
+    border-radius: 30px;
+    height: 200px;
+    width: 45%;
+    margin-bottom: 100px;
+    margin-left: 28%;
+    margin-top: 30px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table tr {
+    border-bottom: solid 7px #eeee;
+}
+table tr:last-child {
+    border-bottom: none;
+}
+table th {
+    position: relative;
+    text-align: left;
+    width: 30%;
+    background-color: #faa556;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+}
+table th:after{
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top:calc(50% - 10px);
+    right:-10px;
+    border-left: 10px solid #faa556;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;  
+  }
+  
+  table td{
+    text-align: left;
+    width: 70%;
+    text-align: center;
+    background-color: rgb(252, 201, 143);
+    padding: 10px 0;
+  }
+
+
+
+
+@media screen and (max-width: 768px) {
+    #hamburger {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        cursor: pointer;
+        z-index: 100;
+        right: 20px;
+        transition: .4s;
+        top: 20px;
+    }
+    #hamburger span {
+        background-color: #000000;
+        position: fixed;
+        right: 2px;
+        display: block;
+        width: 35px;
+        height: 2px;
+        transition: .8s;
+
+    }
+    #hamburger span:nth-of-type(1) {
+        top: 10px;
+    }
+    #hamburger span:nth-of-type(2) {
+        top: 20px;
+    }
+    #hamburger span:nth-of-type(3) {
+        top: 30px;
+    }
+    .photo {
+        background: url(../img/aaron-lee-kuan-leng-Pbe2aUWXo28-unsplash.jpg);
+        background-size: cover;
+    }
+    h1 {
+        color: #8C4502;
+        font-size: 30px;
+        padding-top: 10px;
+        width: 250px;
+        padding-right: 0px;
+    }
+    .explain {
+        padding: 500px 10px 10px 10px;
+        color:lightgray;
+        text-shadow: black 1px 1px 2px;
+        writing-mode: horizontal-tb;
+    }
+    .menu {
+        display: none;
+    }
+    .cost {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 100px;
+    }    
+}
+#top-btn {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+}
+.fadein {
+    opacity: 0;
+    transform: translate(0, 200px);
+    transition: all 1s;
+    -webkit-transform: translate(0, 200px);
+    -moz-transform: translate(0, 200px);
+    -ms-transform: translate(0, 200px);
+    -o-transform: translate(0, 200px);
+  }
+  
+.fadein.scrollIn {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+
+
+.menu-content {
+    display: none;
+}
+#hamburger.active span:nth-of-type(1) {
+    top: 20px;
+    transform: rotate(45deg);
+}
+#hamburger.active span:nth-of-type(2) {
+    opacity: 0;
+}
+#hamburger.active span:nth-of-type(3) {
+    top: 20px;
+    transform: rotate(-45deg);
+}
+@media screen and (max-width: 768px) {
+    .menu-content {
+        display: block;
+        z-index: 100;
+    }
+    .menu-content .menu-title {
+        margin: 40px 20px;
+        font-size: 2.2rem;
+        color: #333333;
+        text-align: left;
+        font-weight: bold;
+    }
+}
+.menu-content {
+    width: calc(100% - 80px);
+    height: 100%;
+    text-align: center;
+    transition: .2s;
+    position: fixed;
+    top: 0;
+    left: calc(-100% - 80px);
+    background: #fff;
+    color: #333333;
+    box-shadow: 80px 0 rgba(216, 137, 19, 0.3);
+}
+.menu-content p {
+    font-style: italic;
+}
+.menu-content li a{
+    color: #333333;
+    margin: 15px;
+    padding: 5px;
+    border-bottom: 0.5px solid #8C4502;
+    display: block;
+}
+.memu-content li {
+    width: 100%;
+    text-align: left;
+}
+.menu-content.open {
+    left:  0;
+}
+
+
+
+
+
+
+h2 {
+    color: #ff9c40;
+    font-weight: 450;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+}
+.photo1 {
+    position: relative;
+}
+.photo1 img {
+    position: absolute;
+    right: 0px;
+    width: 50%;
+    height: auto;
+}
+.about {
+    position: relative;
+    padding-bottom: 500px;
+}
+.about-card {
+    background-color: #fddbbb;
+    box-shadow: 0px 0px 0px 10px #fddbbb;
+    border:dashed #ff9c40 4px;
+    border-radius: 20px 0;
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    top: 260px;
+    left: 10%;
+}
+.about-card p {
+    padding: 10px;
+}
+.h22 {
+    text-align: center;
+}
+.works {
+    position: relative;
+    padding-bottom: 100px;
+}
+.photo2 img {
+    width: 50%;
+    height: auto;
+    margin-top: 10px;
+}
+.works-card {
+    background-color: #fddbbb;
+    box-shadow: 0px 0px 0px 10px #fddbbb;
+    border:dashed #f88921 4px;
+    border-radius: 0 20px;
+    position: absolute;
+    width: 45%;
+    height: 130px;
+    text-align: center;
+    left: 45%;
+    margin-top: -110px;
+}
+.works p {
+    text-align: center;
+    padding: 10px;
+}
+a {
+    display: block;
+    padding: 5px auto;
+}
+
+.contact {
+    background: #eeee;
+}
+.contact .section-title {
+    padding: 40px 0;
+    margin: 0;
+}
+.form {
+    width: 70%;
+    margin: 0 auto;
+}
+.form > div input {
+    margin-bottom: 20px;
+    padding: 7px;
+}
+label {
+    display: inline-block;
+    width: 30%;
+}
+input,textarea {
+    box-sizing: border-box;
+    border: 1px solid #999999;
+    width: 65%;
+}
+textarea {
+    vertical-align: top;
+    height: 15em;
+}
+.button-submit {
+    text-align: center;
+}
+.button {
+    padding: 10px 30px;
+    background-color:#ff9c40;
+    color: #fff;
+    margin: 30px 0;
+    border: none;
+    border-radius: 10px;
+}
+#top-btn {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+@media screen and (max-width: 768px) {
+    img {
+        width: 70%;
+
+    }
+    .about {
+        margin-bottom: 0px;
+        padding-bottom: 400px;
+    }
+    .about-card {
+        top: 50px;
+    }
+    .works {
+        margin-bottom: 0;
+        padding-bottom: 100px;
+    }
+    .works-card {
+        margin-top: -50px;
+    }
+    .contact {
+        padding-top: 140px;
+    }
+    label {
+        display: block;
+        width: 100%;
+    }
+    .form > div {
+        margin: 0 auto;
+    }
+    input , textarea {
+        width: 100%;
+    }
+    h1 {
+        color: #8C4502;
+        font-size: 30px;
+        padding-top: 10px;
+        width: 250px;
+        padding-right: 0px;
+    }
+    .menu {
+        display: none;
+    }
+    
+    .about-card{
+        margin-top: 120px;
+    }
+    .photo2{
+        margin-left: -50;
+    }
+    .contact {
+        padding-top: 0px;
+    }
+    p {
+        font-size: 15px;
+    }
+}
